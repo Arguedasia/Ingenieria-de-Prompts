@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestría en Ingeniería de Prompts: Tu Guía Práctica</title>
+    <link rel="stylesheet" href="prompt_course.css">
+</head>
+<body>
+    <header>
+        <h1>Maestría en Ingeniería de Prompts</h1>
+        <p>Tu Guía Práctica para Comunicarte con la IA</p>
+    </header>
+
+    <nav class="table-of-contents">
+        <h2>Contenido del Curso</h2>
+        <ul>
+            <li><a href="#introduccion">1. Introducción</a></li>
+            <li><a href="#principios">2. Principios Fundamentales</a></li>
+            <li><a href="#anatomia">3. Anatomía de un Prompt Efectivo</a></li>
+            <li><a href="#ejercicios">4. Ejercicios Prácticos</a></li>
+            <li><a href="#conclusion">5. Conclusión y Próximos Pasos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduccion" class="course-section">
+            <h2>1. Introducción: ¿Qué es la Ingeniería de Prompts?</h2>
+            <p>La Ingeniería de Prompts es el arte y la ciencia de diseñar las instrucciones adecuadas para obtener las mejores respuestas de los modelos de Inteligencia Artificial. Es la clave para desbloquear el verdadero potencial de herramientas como ChatGPT, Gemini, y muchas otras.</p>
+            <p>En este micro-curso, aprenderás a estructurar tus prompts de forma clara, concisa y efectiva, transformando tus interacciones con la IA de "prueba y error" a "precisión y resultados".</p>
+        </section>
+
+        <section id="principios" class="course-section">
+            <h2>2. Principios Fundamentales de un Buen Prompt</h2>
+
+            <div class="principle-card">
+                <h3>2.1. Claridad y Especificidad</h3>
+                <p>Evita la ambigüedad. Sé directo y preciso con lo que quieres. Un prompt vago dará una respuesta vaga.</p>
+                <div class="interactive-element">
+                    <p><strong>Mal Prompt:</strong> "Escribe algo sobre perros."</p>
+                    <p><strong>Buen Prompt:</strong> "Escribe un párrafo de 100 palabras sobre los beneficios de tener un perro como mascota para la salud mental, dirigido a adultos jóvenes."</p>
+                    <button class="toggle-answer-btn">¿Por qué es mejor el segundo?</button>
+                    <div class="answer-content">
+                        <p>El segundo prompt especifica el tema (beneficios para la salud mental), la audiencia (adultos jóvenes), la longitud (100 palabras) y el formato (un párrafo).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card">
+                <h3>2.2. Contexto Relevante</h3>
+                <p>Proporciona toda la información necesaria para que la IA entienda la situación y genere una respuesta adecuada. No asumas que la IA "sabe" lo que tú sabes.</p>
+                <div class="interactive-element">
+                    <p><strong>Prompt sin Contexto:</strong> "Resume este texto."</p>
+                    <p><strong>Prompt con Contexto:</strong> "Soy un estudiante de historia y necesito un resumen de este artículo de 500 palabras sobre la Revolución Francesa, enfocándote en las causas económicas. [Aquí iría el texto del artículo]"</p>
+                    <button class="toggle-answer-btn">¿Qué aporta el contexto aquí?</button>
+                    <div class="answer-content">
+                        <p>El contexto ("estudiante de historia", "causas económicas") guía a la IA para generar un resumen pertinente y útil para el usuario.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card">
+                <h3>2.3. Restricciones y Formato</h3>
+                <p>Define límites claros (longitud, estilo, tono) y especifica el formato de salida deseado (lista, tabla, código, ensayo, etc.).</p>
+                <div class="interactive-element">
+                    <p><strong>Prompt sin Restricciones:</strong> "Dame ideas para una cena."</p>
+                    <p><strong>Prompt con Restricciones:</strong> "Genera 5 ideas de cenas vegetarianas rápidas (menos de 30 minutos de preparación) para una persona, presentadas como una lista numerada con ingredientes principales."</p>
+                    <button class="toggle-answer-btn">¿Cómo ayudan las restricciones?</button>
+                    <div class="answer-content">
+                        <p>Las restricciones ("5 ideas", "vegetarianas", "rápidas", "para una persona", "lista numerada") aseguran que la respuesta sea directamente utilizable y cumpla con las necesidades del usuario.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card">
+                <h3>2.4. Ejemplos (Few-shot Learning)</h3>
+                <p>Si necesitas un estilo o formato muy específico, proporciona uno o varios ejemplos de cómo quieres la salida. La IA aprenderá del patrón.</p>
+                <div class="interactive-element">
+                    <p><strong>Prompt sin Ejemplos:</strong> "Clasifica estas frases como positivas o negativas."</p>
+                    <p><strong>Prompt con Ejemplos:</strong> "Clasifica el sentimiento de las siguientes frases como 'Positivo', 'Negativo' o 'Neutral'.</p>
+                    <pre><code>Frase: Me encanta este día. Sentimiento: Positivo
+Frase: Estoy muy cansado. Sentimiento: Negativo
+Frase: El cielo es azul. Sentimiento: Neutral
+Frase: La comida estaba deliciosa. Sentimiento: ?</code></pre>
+                    <button class="toggle-answer-btn">¿Por qué los ejemplos son poderosos?</button>
+                    <div class="answer-content">
+                        <p>Los ejemplos muestran a la IA exactamente el formato y el tipo de clasificación que esperas, reduciendo la ambigüedad y mejorando la precisión.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card">
+                <h3>2.5. Iteración y Refinamiento</h3>
+                <p>No esperes la perfección en el primer intento. Es un proceso. Ajusta tu prompt basándote en las respuestas de la IA hasta obtener lo que necesitas.</p>
+                <div class="interactive-element">
+                    <p><strong>Ejercicio: Refina este Prompt</strong></p>
+                    <p><strong>Prompt Inicial:</strong> "Dame un poema."</p>
+                    <p><strong>Tu Refinamiento:</strong></p>
+                    <textarea class="practice-area" placeholder="Escribe tu prompt refinado aquí..."></textarea>
+                    <button class="toggle-answer-btn">Ver Sugerencia de Refinamiento</button>
+                    <div class="answer-content">
+                        <p><strong>Sugerencia:</strong> "Escribe un poema corto (4 estrofas, rima ABAB) sobre la belleza de la naturaleza en otoño, con un tono melancólico."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anatomia" class="course-section">
+            <h2>3. Anatomía de un Prompt Efectivo</h2>
+            <p>Un prompt bien estructurado a menudo incluye los siguientes componentes:</p>
+
+            <div class="anatomy-card">
+                <h3>3.1. Rol / Persona</h3>
+                <p>Asigna un rol a la IA para que adapte su estilo y conocimiento. Ej: "Actúa como un experto en marketing digital...", "Eres un chef...", "Como un historiador..."</p>
+            </div>
+
+            <div class="anatomy-card">
+                <h3>3.2. Tarea / Objetivo</h3>
+                <p>Describe claramente lo que quieres que la IA haga. Ej: "Genera ideas para...", "Resume este texto...", "Escribe un guion para..."</p>
+            </div>
+
+            <div class="anatomy-card">
+                <h3>3.3. Contexto / Antecedentes</h3>
+                <p>Proporciona la información de fondo necesaria. Ej: "El siguiente texto trata sobre...", "Estamos desarrollando una aplicación para...", "Mi empresa se dedica a..."</p>
+            </div>
+
+            <div class="anatomy-card">
+                <h3>3.4. Restricciones / Reglas</h3>
+                <p>Define los límites, el tono, el estilo, la longitud. Ej: "No uses jerga técnica...", "La respuesta debe ser de menos de 200 palabras...", "Usa un tono formal..."</p>
+            </div>
+
+            <div class="anatomy-card">
+                <h3>3.5. Formato de Salida</h3>
+                <p>Especifica cómo debe presentarse la respuesta. Ej: "Como una lista numerada...", "En formato JSON...", "Un párrafo conciso...", "Una tabla con columnas..."</p>
+            </div>
+
+            <div class="anatomy-card">
+                <h3>3.6. Ejemplos (Opcional)</h3>
+                <p>Si es necesario, incluye ejemplos de entrada y la salida deseada.</p>
+            </div>
+
+            <div class="interactive-element">
+                <h3>Ejercicio: Construye tu Prompt Ideal</h3>
+                <p>Usando los componentes anteriores, intenta construir un prompt completo para la siguiente tarea:</p>
+                <p><strong>Tarea:</strong> Necesitas que la IA te ayude a escribir un correo electrónico persuasivo para invitar a tus clientes a un webinar gratuito sobre "Productividad con IA".</p>
+                <textarea class="practice-area" placeholder="Escribe tu prompt estructurado aquí..."></textarea>
+                <button class="toggle-answer-btn">Ver Ejemplo de Prompt Estructurado</button>
+                <div class="answer-content">
+                    <p><strong>Ejemplo:</strong></p>
+                    <pre><code>Actúa como un copywriter experto en marketing digital.
+Tu tarea es redactar un correo electrónico persuasivo para invitar a nuestros clientes a un webinar gratuito.
+El webinar se titula "Productividad con IA" y se enfoca en cómo la IA puede optimizar el trabajo diario.
+El correo debe ser conciso, amigable, y tener un claro llamado a la acción para registrarse.
+Incluye un espacio para el enlace de registro.
+El tono debe ser entusiasta pero profesional.
+Formato de salida: Un correo electrónico completo, listo para enviar.</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejercicios" class="course-section">
+            <h2>4. Ejercicios Prácticos: ¡Manos a la Obra!</h2>
+            <p>La mejor forma de aprender es practicando. Intenta resolver los siguientes desafíos.</p>
+
+            <div class="exercise-card">
+                <h3>Ejercicio 4.1: Resumen Específico</h3>
+                <p><strong>Tarea:</strong> Tienes un artículo largo sobre el cambio climático y necesitas un resumen para un niño de 10 años, explicando los conceptos clave de forma sencilla y optimista.</p>
+                <textarea class="practice-area" placeholder="Escribe tu prompt aquí..."></textarea>
+                <button class="toggle-answer-btn">Ver Solución Sugerida</button>
+                <div class="answer-content">
+                    <p><strong>Prompt Sugerido:</strong></p>
+                    <pre><code>Actúa como un educador de ciencias para niños.
+Tu tarea es resumir el siguiente artículo sobre el cambio climático.
+El resumen debe ser fácil de entender para un niño de 10 años, usando lenguaje simple y analogías.
+El tono debe ser optimista y enfocado en soluciones, no en el miedo.
+Longitud máxima: 150 palabras.
+Formato: Un párrafo.
+[Aquí iría el artículo sobre el cambio climático]</code></pre>
+                </div>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Ejercicio 4.2: Generación de Ideas Creativas</h3>
+                <p><strong>Tarea:</strong> Necesitas 10 ideas originales para nombres de una cafetería con temática de libros.</p>
+                <textarea class="practice-area" placeholder="Escribe tu prompt aquí..."></textarea>
+                <button class="toggle-answer-btn">Ver Solución Sugerida</button>
+                <div class="answer-content">
+                    <p><strong>Prompt Sugerido:</strong></p>
+                    <pre><code>Eres un consultor de branding creativo.
+Genera 10 nombres originales y atractivos para una cafetería cuya temática principal son los libros y la lectura.
+Los nombres deben evocar calidez, tranquilidad y la pasión por los libros.
+Formato: Una lista numerada.</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="course-section">
+            <h2>5. Conclusión y Próximos Pasos</h2>
+            <p>¡Felicidades! Has completado este micro-curso de Ingeniería de Prompts. Has aprendido los principios fundamentales y la estructura para crear prompts efectivos que te permitirán interactuar con la IA de una manera mucho más productiva.</p>
+            <p>Recuerda: la práctica hace al maestro. Sigue experimentando, refinando y aprendiendo. El mundo de la IA está en constante evolución, y dominar la comunicación con ella es una habilidad invaluable.</p>
+
+            <div class="monetization-hook">
+                <h3>¿Quieres Profundizar?</h3>
+                <p>Este micro-curso es solo el comienzo. Si estás listo para llevar tus habilidades de Ingeniería de Prompts al siguiente nivel, explora nuestro <strong>Curso de Emprende con IA</strong>.</p>
+                <p>Aprenderás técnicas avanzadas, casos de estudio reales, y cómo integrar la IA en tus flujos de trabajo profesionales.</p>
+                <a href="https://arguedasia.github.io/Emprende-con-IA/" class="cta-button">¡Descubre el Curso Completo Ahora!</a>
+            </div>
+
+            <div class="monetization-hook">
+                <h3>Síguenos en TikTok</h3>
+                <p>¿Quieres más consejos rápidos, trucos y las últimas novedades sobre IA y Prompt Engineering? ¡Únete a nuestra comunidad en TikTok!</p>
+                <p>Descubre contenido exclusivo, tutoriales cortos y participa en nuestras sesiones de preguntas y respuestas en vivo.</p>
+                <a href="https://www.tiktok.com/@arguedas.ia" class="cta-button">¡Síguenos en TikTok!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maestría en Ingeniería de Prompts. Todos los derechos reservados. Autor: Alejandro Vega</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-answer-btn');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const answerContent = this.nextElementSibling;
+                    if (answerContent && answerContent.classList.contains('answer-content')) {
+                        answerContent.classList.toggle('active');
+                        if (answerContent.classList.contains('active')) {
+                            this.textContent = 'Ocultar';
+                        } else {
+                            this.textContent = this.dataset.originalText || 'Ver Sugerencia/Solución';
+                        }
+                    }
+                });
+                // Store original text for toggling back
+                button.dataset.originalText = button.textContent;
+            });
+        });
+    </script>
+</body>
+</html>
